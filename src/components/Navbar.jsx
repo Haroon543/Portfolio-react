@@ -48,10 +48,15 @@ export default function Navbar({ theme, toggleTheme }) {
 
   const handleNavClick = (id) => {
     setIsOpen(false);
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    
+    // Add a slight delay to allow the mobile menu to animate out. 
+    // If we scroll while the DOM height is changing, mobile browsers often cancel the scroll.
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 300);
   };
 
   return (
