@@ -55,7 +55,10 @@ export default function Contact() {
 
     setStatus('sending');
     try {
-      const response = await fetch('http://localhost:5000/api/contact', {
+      // Use the environment variable for the backend URL, fallback to localhost for local development
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+      
+      const response = await fetch(`${backendUrl}/api/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
