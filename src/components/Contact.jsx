@@ -204,7 +204,7 @@ export default function Contact() {
                       value={formData.name}
                       onChange={handleChange}
                       placeholder="Haroon"
-                      className="w-full px-4 py-3.5 rounded-xl bg-slate-100/70 dark:bg-slate-900/40 border border-slate-250 dark:border-slate-800/60 focus:border-accent dark:focus:border-accent-light focus:bg-white dark:focus:bg-slate-950/80 text-sm text-slate-900 dark:text-slate-255 placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:ring-1 focus:ring-accent dark:focus:ring-accent-light transition-all duration-300 font-sans"
+                      className="w-full px-4 py-3.5 rounded-xl bg-slate-100/70 dark:bg-slate-900/40 border border-slate-250 dark:border-slate-800/60 focus:border-accent dark:focus:border-accent-light focus:bg-white dark:focus:bg-slate-950/80 text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:ring-1 focus:ring-accent dark:focus:ring-accent-light transition-all duration-300 font-sans"
                     />
                   </div>
                   <div className="space-y-2">
@@ -217,7 +217,7 @@ export default function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       placeholder="vance.design@gmail.com"
-                      className="w-full px-4 py-3.5 rounded-xl bg-slate-100/70 dark:bg-slate-900/40 border border-slate-250 dark:border-slate-800/60 focus:border-accent dark:focus:border-accent-light focus:bg-white dark:focus:bg-slate-950/80 text-sm text-slate-900 dark:text-slate-255 placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:ring-1 focus:ring-accent dark:focus:ring-accent-light transition-all duration-300 font-sans"
+                      className="w-full px-4 py-3.5 rounded-xl bg-slate-100/70 dark:bg-slate-900/40 border border-slate-250 dark:border-slate-800/60 focus:border-accent dark:focus:border-accent-light focus:bg-white dark:focus:bg-slate-950/80 text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:ring-1 focus:ring-accent dark:focus:ring-accent-light transition-all duration-300 font-sans"
                     />
                   </div>
                 </div>
@@ -231,7 +231,7 @@ export default function Contact() {
                     value={formData.subject}
                     onChange={handleChange}
                     placeholder="Project partnership opportunities"
-                    className="w-full px-4 py-3.5 rounded-xl bg-slate-100/70 dark:bg-slate-900/40 border border-slate-250 dark:border-slate-800/60 focus:border-accent dark:focus:border-accent-light focus:bg-white dark:focus:bg-slate-950/80 text-sm text-slate-900 dark:text-slate-255 placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:ring-1 focus:ring-accent dark:focus:ring-accent-light transition-all duration-300 font-sans"
+                    className="w-full px-4 py-3.5 rounded-xl bg-slate-100/70 dark:bg-slate-900/40 border border-slate-250 dark:border-slate-800/60 focus:border-accent dark:focus:border-accent-light focus:bg-white dark:focus:bg-slate-950/80 text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:ring-1 focus:ring-accent dark:focus:ring-accent-light transition-all duration-300 font-sans"
                   />
                 </div>
 
@@ -245,7 +245,7 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Hi Haroon, I would love to collaborate on a MERN backend redesign..."
-                    className="w-full px-4 py-3.5 rounded-xl bg-slate-100/70 dark:bg-slate-900/40 border border-slate-250 dark:border-slate-800/60 focus:border-accent dark:focus:border-accent-light focus:bg-white dark:focus:bg-slate-950/80 text-sm text-slate-900 dark:text-slate-255 placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:ring-1 focus:ring-accent dark:focus:ring-accent-light transition-all duration-300 font-sans resize-none font-medium"
+                    className="w-full px-4 py-3.5 rounded-xl bg-slate-100/70 dark:bg-slate-900/40 border border-slate-250 dark:border-slate-800/60 focus:border-accent dark:focus:border-accent-light focus:bg-white dark:focus:bg-slate-950/80 text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:ring-1 focus:ring-accent dark:focus:ring-accent-light transition-all duration-300 font-sans resize-none font-medium"
                   />
                 </div>
 
