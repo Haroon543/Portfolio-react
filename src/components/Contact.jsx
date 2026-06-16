@@ -57,7 +57,7 @@ export default function Contact() {
     try {
       // Use the environment variable for the backend URL, fallback to localhost for local development
       const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
-      
+
       const response = await fetch(`${backendUrl}/api/contact`, {
         method: 'POST',
         headers: {
@@ -96,10 +96,10 @@ export default function Contact() {
         transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
         className="max-w-7xl mx-auto px-6 md:px-12 w-full"
       >
-        
+
         {/* Section Title */}
         <div className="flex flex-col items-center text-center mb-16">
-          <motion.span 
+          <motion.span
             initial={{ opacity: 0, letterSpacing: "0.1em" }}
             whileInView={{ opacity: 1, letterSpacing: "0.25em" }}
             viewport={{ once: true }}
@@ -107,7 +107,7 @@ export default function Contact() {
           >
             GET IN TOUCH
           </motion.span>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -116,18 +116,18 @@ export default function Contact() {
           >
             Contact <span className="text-gradient-accent">My Studio</span>
           </motion.h2>
-          <motion.div 
+          <motion.div
             initial={{ width: 0 }}
             whileInView={{ width: "4rem" }}
             viewport={{ once: true }}
             transition={{ delay: 0.25 }}
-            className="h-1 bg-accent rounded-full mt-5" 
+            className="h-1 bg-accent rounded-full mt-5"
           />
         </div>
 
         {/* Contact Layout Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
-          
+
           {/* Left Column: Contact Cards & Google Maps */}
           <div className="lg:col-span-5 flex flex-col justify-between gap-6">
             <div className="space-y-4">
@@ -135,14 +135,14 @@ export default function Contact() {
                 {
                   icon: <FiMail className="w-5 h-5 text-accent" />,
                   title: "Direct Email",
-                  value: "haroon.design@gmail.com",
-                  href: "mailto:haroon.design@gmail.com"
+                  value: "haroonc592@gmail.com",
+                  href: "mailto:haroonc592@gmail.com"
                 },
                 {
                   icon: <FiPhone className="w-5 h-5 text-emerald-400" />,
                   title: "Call Direct",
-                  value: "+1 (555) 749-2384",
-                  href: "tel:+15557492384"
+                  value: "+92 3098430454",
+                  href: "tel:+923098430454"
                 },
                 {
                   icon: <FiMapPin className="w-5 h-5 text-indigo-400" />,
@@ -281,7 +281,7 @@ export default function Contact() {
                     transition={{ type: 'spring', damping: 20 }}
                     className="absolute inset-0 bg-white dark:bg-[#070b13] rounded-3xl p-8 flex flex-col items-center justify-center text-center space-y-4 border border-emerald-500/25 z-25"
                   >
-                    <motion.div 
+                    <motion.div
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
                       transition={{ type: 'spring', delay: 0.1 }}
@@ -295,7 +295,7 @@ export default function Contact() {
                     </p>
                   </motion.div>
                 )}
-                
+
                 {status === 'error' && (
                   <motion.div
                     initial={{ opacity: 0, y: 12 }}

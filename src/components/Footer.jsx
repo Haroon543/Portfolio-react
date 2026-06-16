@@ -18,7 +18,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-slate-100 dark:bg-[#090e1a] text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-900/50 py-12 font-sans">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-8">
-        
+
         {/* Left Side: Copyright */}
         <div className="text-center md:text-left space-y-2">
           <p className="text-sm font-semibold tracking-wide text-slate-800 dark:text-slate-300">
@@ -52,10 +52,9 @@ export default function Footer() {
           {/* Socials */}
           <div className="flex gap-4">
             {[
-              { icon: <FiGithub className="w-4.5 h-4.5" />, url: "#" },
-              { icon: <FiLinkedin className="w-4.5 h-4.5" />, url: "#" },
-              { icon: <FiBookOpen className="w-4.5 h-4.5" />, url: "#" },
-              { icon: <FiFacebook className="w-4.5 h-4.5" />, url: "#" }
+              { icon: <FiGithub className="w-4.5 h-4.5" />, url: "https://github.com/Haroon543" },
+              { icon: <FiLinkedin className="w-4.5 h-4.5" />, url: "https://www.linkedin.com/in/hafiz-haroon-a22059296/" },
+              { icon: <FiFacebook className="w-4.5 h-4.5" />, url: "https://www.facebook.com/profile.php?id=100072652038155" },
             ].map((soc, idx) => (
               <a
                 key={idx}
