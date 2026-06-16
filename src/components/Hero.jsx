@@ -164,23 +164,7 @@ export default function Hero() {
       {/* ── Particle canvas ── */}
       <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none z-0" />
 
-      {/* ── Available for Freelance — top-left corner badge ── */}
-      <motion.div
-        initial={{ opacity: 0, x: -30, y: -10 }}
-        animate={{ opacity: 1, x: 0, y: 0 }}
-        transition={{ duration: 0.6, delay: 1.4, type: 'spring', stiffness: 160, damping: 18 }}
-        className="absolute top-24 left-8 z-20"
-      >
-        <div className="flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-white/90 dark:bg-slate-900/90 border border-emerald-400/40 shadow-lg shadow-emerald-500/10 backdrop-blur-md">
-          <span className="relative flex h-2.5 w-2.5 flex-shrink-0">
-            <span className="animate-ping absolute inset-0 rounded-full bg-emerald-400 opacity-65" />
-            <span className="relative h-2.5 w-2.5 rounded-full bg-emerald-500" />
-          </span>
-          <span className="text-[11px] font-black tracking-wider uppercase text-slate-700 dark:text-slate-200 whitespace-nowrap">
-            Available for Freelance
-          </span>
-        </div>
-      </motion.div>
+
 
 
       {/* ── Full-page background glow blobs ──────────────────────────
@@ -196,6 +180,24 @@ export default function Hero() {
 
       {/* ── Main content column ── */}
       <div className="relative max-w-5xl mx-auto px-6 w-full flex flex-col items-center text-center gap-5 z-10">
+
+        {/* ── Available for Freelance Badge ── */}
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1.4, type: 'spring', stiffness: 160, damping: 18 }}
+          className="z-20 mb-2 md:absolute md:top-0 md:-left-4 lg:-left-12 xl:-left-24 2xl:fixed 2xl:top-24 2xl:left-8"
+        >
+          <div className="flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-white/90 dark:bg-slate-900/90 border border-emerald-400/40 shadow-lg shadow-emerald-500/10 backdrop-blur-md">
+            <span className="relative flex h-2.5 w-2.5 flex-shrink-0">
+              <span className="animate-ping absolute inset-0 rounded-full bg-emerald-400 opacity-65" />
+              <span className="relative h-2.5 w-2.5 rounded-full bg-emerald-500" />
+            </span>
+            <span className="text-[11px] font-black tracking-wider uppercase text-slate-700 dark:text-slate-200 whitespace-nowrap">
+              Available for Freelance
+            </span>
+          </div>
+        </motion.div>
 
         {/* Name */}
         <motion.h1
